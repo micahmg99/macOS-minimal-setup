@@ -35,6 +35,32 @@ chmod +x scripts/*.sh
 ./scripts/01-apply-minimal-defaults.sh
 ```
 
+Baseline applies:
+
+- Screenshot save location to `~/Downloads/screenshots`
+- Menu bar auto-hide enabled
+- Dock defaults:
+  - auto-hide on
+  - magnification off
+  - minimize effect set to `scale`
+  - app launch animation off
+  - recent apps off
+  - running-app indicator dots off
+  - dock size set to `64`
+- Finder defaults:
+  - list view preferred
+  - path bar shown
+  - file extensions shown
+- Restarts `SystemUIServer`, `Finder`, and `Dock`
+
+Baseline does **not** apply:
+
+- wallpaper changes (use script 03)
+- accessibility visual toggles (use script 05)
+- dock running-only mode (use script 02)
+- Raycast install (use script 04)
+- any custom launcher folder/alias/icon system
+
 ### 2) (Optional) Make Dock show running apps only
 
 ```bash
