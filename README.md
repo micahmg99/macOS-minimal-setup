@@ -62,19 +62,19 @@ Baseline does **not** apply:
 - Raycast install (use script 04)
 - any custom launcher folder/alias/icon system
 
-### 2) (Optional) Make Dock show running apps only
+### 2) Make Dock show running apps only
 
 ```bash
 ./scripts/02-dock-running-only.sh
 ```
 
-### 3) (Optional) Set black wallpaper
+### 3) Set black wallpaper
 
 ```bash
 ./scripts/03-set-black-wallpaper.sh
 ```
 
-### 4) (Optional) Install Raycast
+### 4) Install Raycast
 
 ```bash
 ./scripts/04-install-raycast.sh
@@ -86,7 +86,9 @@ Baseline does **not** apply:
 ./scripts/05-accessibility-visuals.sh
 ```
 
-### Roll back Dock
+### Undo Dock changes
+
+Undo Dock changes by running:
 
 ```bash
 ./scripts/rollback-dock-latest.sh
