@@ -1,6 +1,5 @@
 # macOS Minimal Setup
 
-Reproducible scripts for a clean, minimalist Mac setup.
 Reproducible scripts for a clean, minimalist Mac setup using native settings/tools, with Raycast as an optional add-on.
 
 
