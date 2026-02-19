@@ -4,10 +4,10 @@ Reproducible scripts for a clean, minimalist Mac setup.
 
 ## What this includes
 
-- Minimal UI defaults (Dock behavior, Finder defaults, screenshot location)
+- Baseline setup that applies almost everything in one run
 - Accessibility visual defaults (contrast/transparency/motion) + grayscale shortcut setup notes
-- Optional black wallpaper
-- Optional "Dock for running apps only"
+- Black wallpaper
+- Dock running-only mode
 - Optional Raycast install
 - Dock rollback from latest backup
 
@@ -51,13 +51,12 @@ Baseline applies:
   - list view preferred
   - path bar shown
   - file extensions shown
-- Restarts `SystemUIServer`, `Finder`, and `Dock`
+- Accessibility visuals via `05-accessibility-visuals.sh`
+- Black wallpaper via `03-set-black-wallpaper.sh`
+- Dock running-only mode via `02-dock-running-only.sh`
 
 Baseline does **not** apply:
 
-- wallpaper changes (use script 03)
-- accessibility visual toggles (use script 05)
-- dock running-only mode (use script 02)
 - Raycast install (use script 04)
 - any custom launcher folder/alias/icon system
 

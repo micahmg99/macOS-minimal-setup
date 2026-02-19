@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 echo "Applying baseline minimalist defaults..."
 
 # Screenshot destination
@@ -28,4 +30,13 @@ killall SystemUIServer >/dev/null 2>&1 || true
 killall Finder >/dev/null 2>&1 || true
 killall Dock >/dev/null 2>&1 || true
 
-echo "Done. Minimal defaults applied."
+echo "Applying accessibility visuals..."
+"$SCRIPT_DIR/05-accessibility-visuals.sh"
+
+echo "Setting black wallpaper..."
+"$SCRIPT_DIR/03-set-black-wallpaper.sh"
+
+echo "Setting Dock to running-apps-only..."
+"$SCRIPT_DIR/02-dock-running-only.sh"
+
+echo "Done. Baseline applied (everything except Raycast install)."
