@@ -81,9 +81,3 @@ chmod +x scripts/*.sh
 ```bash
 killall Dock Finder cfprefsd || true
 ```
-
-## Share on GitHub
-
-1. Create a new repo.
-2. Copy this `macos-minimal-setup` folder into it.
-3. Commit and push.
